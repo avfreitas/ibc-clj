@@ -1,0 +1,7 @@
+(get {:id 4})
+(get {:id 4} "id" )
+(get {:id 4} :id )
+(pos? [0])
+cls
+lein clean
+(exit)

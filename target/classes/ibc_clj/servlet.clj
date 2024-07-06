@@ -1,0 +1,1 @@
+(do (clojure.core/ns ibc-clj.servlet (:gen-class :extends javax.servlet.http.HttpServlet)) (def service-method) (clojure.core/defn -service [servlet__2309__auto__ request__2310__auto__ response__2311__auto__] (service-method servlet__2309__auto__ request__2310__auto__ response__2311__auto__)))
