@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Test - Permissions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Front End - API - Permissions</h1>
+        
+        <h2>List Permissions</h2>
+        <button id="list-permissions">List Permissions</button>
+        <ul id="permissions-list"></ul>
+    
+        <h2>Add Permission</h2>
+        <form id="add-permission-form">
+            <label for="permission-id">ID:</label>
+            <input type="text" id="permission-id" name="id" required>
+            <label for="permission-description">Description:</label>
+            <input type="text" id="permission-description" name="description" required>
+            <label for="permission-created_by">Created By:</label>
+            <input type="text" id="permission-created_by" name="created_by">
+            <label for="permission-updated_by">Updated By:</label>
+            <input type="text" id="permission-updated_by" name="updated_by">
+            <button type="submit">Add Permission</button>
+        </form>
+    
+        <h2>Delete Permission</h2>
+        <form id="delete-permission-form">
+            <label for="delete-permission-id">ID:</label>
+            <input type="text" id="delete-permission-id" name="id" required>
+            <button type="submit">Delete Permission</button>
+        </form>
+        
+        <h2>Update Permission</h2>
+        <form id="check-permission-id-form">
+            <label for="check-permission-id">ID:</label>
+            <input type="text" id="check-permission-id" name="id" required>
+            <button type="submit">Check ID</button>
+        </form>
+        
+        <form id="update-permission-form" style="display:none;">
+            <input type="hidden" id="update-permission-id" name="id" required>
+            <label for="update-permission-description">Description:</label>
+            <input type="text" id="update-permission-description" name="description">
+            <label for="update-permission-updated_by">Updated By:</label>
+            <input type="text" id="update-permission-updated_by" name="updated_by">
+            <button type="submit">Update Permission</button>
+        </form>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

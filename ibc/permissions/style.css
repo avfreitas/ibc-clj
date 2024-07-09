@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 30%;
+    background-color: #dad5d5; /* Cinza claro */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    color: #0619c0;
+    text-align: left; /* Alinhar à esquerda */
+    width: 100%; /* Garantir que ocupe 100% da largura do container */
+}
+
+h1 {
+    color: #023a04;
+}
+
+button {
+    background-color: #023a04; /* Azul */
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+    align-self: flex-start; /* Alinhar à esquerda */
+}
+
+button:hover {
+    background-color: #0056b3; /* Azul escuro */
+}
+
+form {
+    background-color: #bfbdbd; /* Cinza escuro */
+    padding: 20px;
+    margin: 20px 0;
+    width: 90%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinhar elementos internos à esquerda */
+}
+
+label {
+    display: block;
+    margin-top: 5px;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}

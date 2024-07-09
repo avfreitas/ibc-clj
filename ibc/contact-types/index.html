@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Front End - API - contact-types</h1>
+        
+        <h2>List Contact Types</h2>
+        <button id="list-contact-types">List Contact Types</button>
+        <ul id="contact-types-list"></ul>
+
+        <h2>Add Contact Type</h2>
+        <form id="add-contact-type-form">
+            <label for="id">ID:</label>
+            <input type="text" id="id" name="id" required>
+            <label for="description">Description:</label>
+            <input type="text" id="description" name="description" required>
+            <label for="priority">Priority:</label>
+            <input type="text" id="priority" name="priority" required>
+            <label for="status">Status:</label>
+            <input type="text" id="status" name="status" required>
+            <label for="created_by">Created By:</label>
+            <input type="text" id="created_by" name="created_by">
+            <label for="updated_by">Updated By:</label>
+            <input type="text" id="updated_by" name="updated_by">
+            <button type="submit">Add Contact Type</button>
+        </form>
+
+        <h2>Delete Contact Type</h2>
+        <form id="delete-contact-type-form">
+            <label for="delete-id">ID:</label>
+            <input type="text" id="delete-id" name="id" required>
+            <button type="submit">Delete Contact Type</button>
+        </form>
+        
+        <h2>Update Contact Type</h2>
+        <form id="check-id-form">
+            <label for="check-id">ID:</label>
+            <input type="text" id="check-id" name="id" required>
+            <button type="submit">Check ID</button>
+        </form>
+        
+        <form id="update-contact-type-form" style="display:none;">
+            <input type="hidden" id="update-id" name="id" required>
+            <label for="update-description">Description:</label>
+            <input type="text" id="update-description" name="description">
+            <label for="update-priority">Priority:</label>
+            <input type="text" id="update-priority" name="priority">
+            <label for="update-status">Status:</label>
+            <input type="text" id="update-status" name="status">
+            <label for="update-updated_by">Updated By:</label>
+            <input type="text" id="update-updated_by" name="updated_by">
+            <button type="submit">Update Contact Type</button>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

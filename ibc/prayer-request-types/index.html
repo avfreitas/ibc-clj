@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Front End - API - prayer-request-types</h1>
+        
+        <h2>List Prayer Request Types</h2>
+        <button id="list-prayer-request-types">List Prayer Request Types</button>
+        <ul id="prayer-request-types-list"></ul>
+    
+        <h2>Add Prayer Request Type</h2>
+        <form id="add-prayer-request-type-form">
+            <label for="prayer-id">ID:</label>
+            <input type="text" id="prayer-id" name="id" required>
+            <label for="prayer-description">Description:</label>
+            <input type="text" id="prayer-description" name="description" required>
+            <label for="prayer-created_by">Created By:</label>
+            <input type="text" id="prayer-created_by" name="created_by">
+            <label for="prayer-updated_by">Updated By:</label>
+            <input type="text" id="prayer-updated_by" name="updated_by">
+            <button type="submit">Add Prayer Request Type</button>
+        </form>
+    
+        <h2>Delete Prayer Request Type</h2>
+        <form id="delete-prayer-request-type-form">
+            <label for="delete-prayer-id">ID:</label>
+            <input type="text" id="delete-prayer-id" name="id" required>
+            <button type="submit">Delete Prayer Request Type</button>
+        </form>
+        
+        <h2>Update Prayer Request Type</h2>
+        <form id="check-prayer-id-form">
+            <label for="check-prayer-id">ID:</label>
+            <input type="text" id="check-prayer-id" name="id" required>
+            <button type="submit">Check ID</button>
+        </form>
+        
+        <form id="update-prayer-request-type-form" style="display:none;">
+            <input type="hidden" id="update-prayer-id" name="id" required>
+            <label for="update-prayer-description">Description:</label>
+            <input type="text" id="update-prayer-description" name="description">
+            <label for="update-prayer-updated_by">Updated By:</label>
+            <input type="text" id="update-prayer-updated_by" name="updated_by">
+            <button type="submit">Update Prayer Request Type</button>
+        </form>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
